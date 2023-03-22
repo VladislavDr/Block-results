@@ -11,3 +11,10 @@ string AddMessageToUser(string messageToUser){
     if(answer.Length <= 3) count ++;
     return answer;
 }
+
+for(int i = 0; i < size; i++){
+    string message = AddMessageToUser("Введите " + (i + 1) + " элемент массива");
+    array [i] = message;
+}
+
+Console.Write($"Ваш массив строк [{string.Join("; ", array)}]->");
