@@ -18,3 +18,14 @@ for(int i = 0; i < size; i++){
 }
 
 Console.Write($"Ваш массив строк [{string.Join("; ", array)}]->");
+string [] result = new string [count];
+
+count = 0;
+
+for(int i = 0; i < size; i++){
+    if(array[i].Length <= 3){
+        result[count++] = array[i];
+    }
+}
+
+Console.Write($" [{string.Join(", ", result)}]");
